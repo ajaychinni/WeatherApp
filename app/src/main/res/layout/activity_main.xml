@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffc970b"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    tools:context="com.example.ajay.weatherapp.MainActivity">
+    
+    <TextView
+        android:layout_centerInParent="true"
+        android:text="100"
+        android:textSize="150sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/temperatureLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+<ImageView
+    android:id="@+id/ivdegree"
+    android:src="@drawable/degree"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_alignTop="@+id/temperatureLabel"
+    android:layout_toRightOf="@+id/temperatureLabel"
+    android:layout_toEndOf="@+id/temperatureLabel"
+    android:layout_marginTop="50dp"/>
+    <TextView
+        android:id="@+id/tvtime"
+        android:textSize="18sp"
+        android:layout_toLeftOf="@id/ivdegree"
+        android:text="At 5 pm it will be"
+        android:textColor="#80ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/temperatureLabel"/>
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:text="Jalandhar, Punjab"
+        android:textColor="#ffffffff"
+        android:textSize="24sp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/temperatureLabel"
+        android:layout_marginLeft="75dp"
+        android:layout_marginBottom="50dp"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/temperatureLabel">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="37dp"
+            android:layout_weight="1">
+            <TextView
+                android:textColor="#80ffffff"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HUMADITY"/>
+            <TextView
+                android:id="@+id/humadity"
+                android:text="0.88"
+                android:textColor="#ffffffff"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="37dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="#80ffffff"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRECIPITATION"/>
+            <TextView
+                android:id="@+id/percipitation"
+                android:text="100%"
+                android:textColor="#ffffffff"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
